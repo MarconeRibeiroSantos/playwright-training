@@ -1,8 +1,14 @@
+# Environment Variables
+.env
+.env.*
+!.env.example
 
-# Playwright
+# Playwright Test Outputs & Reports
 node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+.auth/
+artifacts/
