@@ -26,8 +26,10 @@ test.describe('User Authentication Flows', () => {
 
   test('authenticate administrator and land on administration dashboard @pfm_regression', async ({ page }) => {
     // Arrange: Cria administrador antes do login
-    const admin = generateTestUser({ isAdmin: true });
+
+    //TODO: Funcao para receber valores visiveis.
     const registerPage = await RegisterPage.navigate(page);
+    const admin = generateTestUser({ isAdmin: true });
     await registerPage.fillName(admin.name);
     await registerPage.fillEmail(admin.email);
     await registerPage.fillPassword(admin.password);

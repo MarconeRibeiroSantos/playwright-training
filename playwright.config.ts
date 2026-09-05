@@ -20,7 +20,7 @@ export default defineConfig({
   /* Retry: 1 no CI, 0 localmente */
   retries: process.env.CI ? 1 : 0,
   /* Workers */
-  workers: process.env.CI ? 2 : undefined,
+  workers: 4,
   /* Reporter */
   reporter: [['html', { open: 'never' }], ['list']],
   /* Configurações compartilhadas */
